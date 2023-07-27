@@ -21,6 +21,10 @@ public class JWTAuthorizationServerApp {
 
     public static void main(String[] args) throws Exception {
         SpringApplication.run(JWTAuthorizationServerApp.class, args);
+        System.out.println("testing github private repo");
+        System.out.println("testing github private repo");
+        System.out.println("testing github private repo");
+        System.out.println("testing github private repo");
     }
 
     @Bean
