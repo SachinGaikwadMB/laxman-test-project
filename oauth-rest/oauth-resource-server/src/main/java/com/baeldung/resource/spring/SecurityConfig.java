@@ -24,5 +24,10 @@ public class SecurityConfig {
             .oauth2ResourceServer()
             .jwt();
         return http.build();
+        System.out.println("hello world.....");
+        System.out.println("hello world.....");
+        System.out.println("hello world.....");
+        System.out.println("hello world.....");
+        System.out.println("hello world.....");
     }
 }
