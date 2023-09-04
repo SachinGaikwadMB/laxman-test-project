@@ -25,19 +25,22 @@ class Oauth2ClientContextFilterWithPath extends OAuth2ClientContextFilter {
         }
 
         if (e.getStateKey() != null) {
+            System.out.println("hello world.....");
             builder.queryParam("state", e.getStateKey());
         }
-
+        System.out.println("hello world.....");
         String url = getBaseUrl(request) + builder.build().encode().toUriString();
         this.redirectStrategy.sendRedirect(request, response, url);
     }
 
     @Override
     public void setRedirectStrategy(RedirectStrategy redirectStrategy) {
+        System.out.println("hello world.....");
         this.redirectStrategy = redirectStrategy;
     }
 
     private String getBaseUrl(HttpServletRequest request) {
+        System.out.println("hello world.....");
         StringBuffer url = request.getRequestURL();
         return url.substring(0, url.length() - request.getRequestURI().length() + request.getContextPath().length());
     }
