@@ -11,6 +11,7 @@ public class SimplePlatformProvider implements PlatformProvider {
 
 	@Override
 	public void onStartup(Runnable startupHook) {
+		System.out.println("Laxman Updated");
 		startupHook.run();
 	}
 
