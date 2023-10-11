@@ -16,6 +16,7 @@ public class SimplePlatformProvider implements PlatformProvider {
 
 	@Override
 	public void onShutdown(Runnable shutdownHook) {
+		System.out.println("Laxman updated");
 		this.shutdownHook = shutdownHook;
 	}
 
