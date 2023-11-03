@@ -27,6 +27,18 @@ public class Resteasy3Provider implements ResteasyProvider {
         ResteasyProviderFactory.getInstance();
         ResteasyProviderFactory.pushContext(type, instance);
     }
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+    @Override
+    public void pushContext(Class type, Object instance) {
+        ResteasyProviderFactory.getInstance();
+        ResteasyProviderFactory.pushContext(type, instance);
+    }
+    @SuppressWarnings({ "unchecked", "rawtypes" })
+    @Override
+    public void pushContext(Class type, Object instance) {
+        ResteasyProviderFactory.getInstance();
+        ResteasyProviderFactory.pushContext(type, instance);
+    }
 
     @Override
     public void clearContextData() {
